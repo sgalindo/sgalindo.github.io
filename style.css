@@ -1,0 +1,346 @@
+body {
+  font-family:"Prompt", sans-serif;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.social {
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+.social-links{
+  grid-area:socialLinks;
+  list-style-type:none;
+  text-align:right;
+}
+
+.social-item {
+  display:inline-block;
+  margin-left:10px;
+  width:32px;
+  height:32px;
+}
+
+.social-item img {
+  visibility:hidden;
+}
+
+.github-link {
+  background: url("img/GitHub-Mark-120px-plus.png");
+  background-size:cover;
+}
+
+.github-link:hover {
+  cursor:pointer;
+  background: url("img/GitHub-Mark-Light-120px-plus.png");
+  background-size:cover;
+}
+
+.linkedin-link {
+  background: url("img/In-Black-128px-R.png");
+  background-size:cover;
+}
+
+.linkedin-link:hover {
+  cursor:pointer;
+  background: url("img/In-White-128px-R.png");
+  background-size:cover;
+}
+
+.twitter-link {
+  background: url("img/Twitter_Logo_BlackOnImage.png");
+  background-size:cover;
+}
+
+.twitter-link:hover {
+  cursor:pointer;
+  background: url("img/Twitter_Logo_WhiteOnImage.png");
+  background-size:cover;
+}
+
+.nav-wrapper {
+  max-width:1200px;
+  margin:0 auto;
+  padding:15px 20px;
+  margin-top:30px;
+  display:grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 1fr;
+}
+
+.nav-wrapper ul li {
+  display:inline;
+  list-style-type:none;
+}
+
+.nav-wrapper a {
+  letter-spacing: .1em;
+  text-decoration:none;
+  font-weight:bold;
+  color:#000;
+}
+
+.nav-wrapper a:hover {
+  cursor:pointer;
+  color:#eee;
+}
+
+.main-nav {
+  padding:0;
+  margin-right:10px;
+  text-align:right;
+}
+
+.list-item {
+  margin-left:10px;
+  text-transform:uppercase;
+  padding:10px;
+}
+
+.logo {
+  padding:10px;
+  font-weight:bold;
+  font-size:32px;
+}
+
+.burger-icon {
+  display:none;
+}
+
+.main-wrapper {
+  max-width:1200px;
+  margin:auto;
+}
+
+.wrapper {
+  max-width:100%;
+  margin:auto;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:10px;
+  grid-template-areas: 
+    "featuredMain featuredMain featuredMain"
+    "contentMain  contentMain  contentMain"
+    "featuredSub  featuredSub  featuredSub"
+}
+
+.wrapper > .featured,
+.wrapper > .sub-featured > div,
+.wrapper > .main-content,
+.wrapper > .main-sidebar {
+  padding: 20px;
+}
+
+.featured {
+  grid-area:featuredMain;
+  min-height:500px;
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
+    border-box, url(https://source.unsplash.com/1600x900/?technology)
+    no-repeat center center;
+  display:grid;
+  align-content:flex-end;
+  color:#fff;
+}
+
+.main-content, .featured, .sub-featured > div, .main-sidebar, .sub-featured, .sub1-img, .sub2-img, .sub3-img {
+  box-shadow:0 0 4px rgba(0,0,0,0.25);
+}
+
+.featured h1 {
+  font-size:48px;
+  max-width:650px;
+}
+
+.main-content {
+  grid-area:contentMain;
+  background-color:rgba(255,255,255,0.35);
+  color:#444;
+  line-height: 1.5em;
+}
+
+.sub-featured {
+  grid-area:featuredSub;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap:10px;
+  color:#fff;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.sub-featured h2 {
+  margin-left:15px;
+}
+
+.sub {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  margin:0 15px 15px 15px;
+  color:#444;
+  background-color: #fff;
+  background-image: linear-gradient(225deg, #fff 0%, #d7e1ec 74%);
+}
+
+.sub-img {
+  margin-right:20px;
+}
+
+.sub1-img {
+  background: border-box, url(img/wacktory-screenshot.png)
+    no-repeat center center;
+  background-size:cover;
+}
+
+.sub2-img {
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
+    border-box, url(https://source.unsplash.com/400x100/?sports)
+    no-repeat center center;
+  background-size:cover;
+}
+
+.sub3-img {
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
+    border-box, url(https://source.unsplash.com/400x100/?cars)
+    no-repeat center center;
+  background-size:cover;
+}
+
+.footer {
+  display:grid;
+  margin:auto;
+  margin-top:10px;
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
+    border-box, url(https://source.unsplash.com/1600x400/?art)
+    no-repeat center center;
+  background-size:cover;
+  text-align:center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color:#333;
+  color:#fff;
+}
+
+.footer > div {
+  padding:20px;
+}
+
+.contact {
+  display:grid;
+  margin:auto;
+  padding:20px;
+  grid-column:1/-1;
+}
+
+.copyright {
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+  grid-column:1/-1;
+}
+
+/* --- TABLET MEDIA QUERY --- */
+
+@media screen and (max-width:950px) {
+  .wrapper {
+    grid-template-areas: 
+      "featuredMain featuredMain featuredMain"
+      "contentMain  contentMain  contentMain"
+      "featuredSub  featuredSub  featuredSub"
+  }
+  .nav-items {
+    grid-column:1/5;
+    text-align:center;
+  }
+  .logo {
+    grid-column:1/5;
+    text-align:center;
+  }
+  .nav-wrapper {
+    margin-top:0;
+  }
+}
+
+/* --- MOBILE MEDIA QUERY (MODERN SIZE) --- */
+@media screen and (max-width:690px) {
+  .logo {
+    grid-column:1/3;
+    font-size:24px;
+    padding:10px 10px 10px 0;
+  }
+  .nav-items {
+    grid-column:1/5;
+    text-align:center;
+  }
+  .nav-wrapper ul {
+    padding:0;
+    margin:0;
+  }
+  .nav-wrapper ul li{
+    display:block;
+  }
+  .burger-icon {
+    display:inline-block;
+    justify-self:end;
+    grid-column:4/5;
+    border:2px solid #333;
+    color:#333;
+    padding:10px;
+    font-weight:bold;
+    border-radius:3px;
+  }
+  .burger-icon:hover {
+    cursor:pointer;
+  }
+  .featured {
+    min-height:300px;
+  }
+  .featured h1 {
+    font-size:36px;
+    max-width:650px;
+  }
+  .wrapper {
+    grid-template-areas:
+      "featuredMain featuredMain featuredMain"
+      "contentMain  contentMain  contentMain"
+      "featuredSub  featuredSub  featuredSub"
+  }
+  .sub {
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+  }
+  .sub-img {
+    max-height:400px;
+  }
+  .footer > div{
+    grid-column:1/-1;
+  }
+  .featured h1 {
+    font-size:30px;
+  }
+  .mobile-show {
+    display:block;
+  }
+  .mobile-hide {
+    display:none;
+  }
+}
+
+/* --- MOBILE MEDIA QUERY (SMALLER SIZE) --- */
+@media screen and (max-width:340px) {
+  .social-links {
+    text-align:center;
+    padding:0;
+  }
+  .nav-wrapper {
+    padding:15px 20px 15px 5px;
+  }
+  .logo {
+    font-size:20px;
+  }
+  .burger-icon {
+    font-size:16px;
+  }
+}

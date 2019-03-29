@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <Title>Salvador Galindo | Welcome</Title>
-    <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="This is my portfolio website.">
-    <meta name="keywords" content="salvador, galindo, portfolio, resume, game design, game development, programmer, software, games">
-    <meta name="author" ccontent="Salvador Galindo">
-  </head>
-  <body>
 
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Salvador</span> Galindo</h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+    crossorigin="anonymous">
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+</head>
+
+<body>
+  <div class="social">
+    <ul class="social-links social-mobile-hide">
+      <li class="social-item github-link">
+        <a href="https://github.com/sgalindo"><img src="img/GitHub-Mark-120px-plus.png" width="32px" height="32px"></a>
+      </li>
+      <li class="social-item linkedin-link">
+        <a href="https://www.linkedin.com/in/salvador-galindo-aa449b158"><img src="img/In-Black-128px-R.png" width="32px" height="32px"></a>
+      </li>
+      <li class="social-item twitter-link">
+        <a href="https://www.twitter.com/salveedor"><img src="img/Twitter_Logo_BlackOnImage.png" width="32px" height="32px"></a>
+      </li>
+    </ul>
+  </div>
+  <nav class="nav-wrapper">
+    <div class="logo">
+      <strong>Salvador Galindo</strong>
+    </div>
+    <div class="burger-icon"><i class="fas fa-bars"></i> MENU</div>
+    <ul class="nav-items main-nav mobile-hide">
+      <li class="list-item"><a href="#">Home</a></li>
+      <li class="list-item"><a href="#">Projects</a></li>
+      <li class="list-item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="main-wrapper">
+    <div class="wrapper">
+      <div class="featured">
+        <h1>SOFTWARE DEVELOPER</h1>
       </div>
-    </header>
-
-    <section id="showcase">
-      <div class="container">
-        <h1>Software Developer</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </section>
-
-    <section id="divider">
-      <div class="container">
-      </div>
-    </section>
-
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./img/unity_logo.png">
-          <h3>Software Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="sub-featured">
+        <h2>PROJECTS</h2>
+        <div class="sub sub1">
+          <div class="sub-img sub1-img"></div>
+          <div>
+            <h3>Wacktory</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra sollicitudin orci, eu egestas est mollis eu. Aliquam mattis in tellus et rutrum. Cras metus lectus, lacinia non quam at, maximus iaculis justo. Mauris tempor mi at lectus vulputate cursus. Curabitur eu cursus nunc, eu congue orci.</p>
+          </div>    
         </div>
-        <div class="box">
-          <img src="./img/unity_logo.png">
-          <h3>Game Programming</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="sub sub2">
+          <div class="sub-img sub2-img"></div>
+          <div>
+            <h3>Starcraft II Bot</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra sollicitudin orci, eu egestas est mollis eu. Aliquam mattis in tellus et rutrum. Cras metus lectus, lacinia non quam at, maximus iaculis justo. Mauris tempor mi at lectus vulputate cursus. Curabitur eu cursus nunc, eu congue orci.</p>
+          </div>
         </div>
-        <div class="box">
-          <img src="./img/unity_logo.png">
-          <h3>Game Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="sub sub3">
+          <div class="sub-img sub3-img"></div>
+          <div>
+            <h3>Phonote</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra sollicitudin orci, eu egestas est mollis eu. Aliquam mattis in tellus et rutrum. Cras metus lectus, lacinia non quam at, maximus iaculis justo. Mauris tempor mi at lectus vulputate cursus. Curabitur eu cursus nunc, eu congue orci.</p>
+          </div>
         </div>
       </div>
-    </section>
-
-    <footer id="footer">
-      <p>Salvador Galindo, Copyright &copy; 2019</p>
-    </footer>
-
-  </body>
+      <div class="main-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu risus lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum euismod velit in dui vestibulum, eget euismod eros posuere. Duis lectus velit, consequat vel molestie et, vehicula eu ante. Cras sit amet ligula quam. Suspendisse id velit quis orci feugiat hendrerit in non elit. Nullam et consequat ex. Maecenas non quam sed ante posuere vulputate id ut est. Morbi leo erat, sagittis ac sapien quis, feugiat auctor mauris. Ut fermentum leo porttitor pretium mollis. Ut auctor hendrerit suscipit. Aenean tincidunt mi pretium urna pretium dictum. Nunc pretium ex ut tellus finibus scelerisque. Morbi feugiat, ex id placerat tristique, dui nunc porttitor dolor, sit amet suscipit ante massa finibus felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec iaculis tortor.
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="contact">
+      <form class="contact-form">
+        <input name="name" type="text" class="form-input" placeholder="Name" required><br>
+        <input name="email" type="email" class="form-input" placeholder="Email" required><br>
+        <textarea name="message" class="form-input" placeholder="Message" row="4" required></textarea><br>
+        <input type="submit" class="form-input submit" value="SEND MESSAGE">        
+      </form>
+    </div>
+    <div class="copyright">Salvador Galindo, Copyright &copy; 2019</div>
+  </footer>
+</body>
 </html>
