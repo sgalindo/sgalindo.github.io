@@ -5,6 +5,7 @@
   <title>Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/SG_Logo_Gray.png">
   <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -27,10 +28,10 @@
         <a href="https://github.com/sgalindo"><img src="img/GitHub-Mark-120px-plus.png" width="32px" height="32px"></a>
       </li>
       <li class="social-item linkedin-link">
-        <a href="https://www.linkedin.com/in/salvador-galindo-aa449b158"><img src="img/In-Black-128px-R.png" width="32px" height="32px"></a>
+        <a href="https://www.linkedin.com/in/salvador-galindo-aa449b158"><img src="img/In-Black-128px-R.png" width="34.72px" height="32px"></a>
       </li>
-      <li class="social-item twitter-link">
-        <a href="https://www.twitter.com/salveedor"><img src="img/Twitter_Logo_BlackOnImage.png" width="32px" height="32px"></a>
+      <li class="social-item itch-link">
+        <a href="https://sagalindo.itch.io/"><img src="img/itchio-logo-textless-black.png" width="35.52px" height="32px"></a>
       </li>
     </ul>
   </div>
@@ -40,9 +41,9 @@
     </div>
     <div class="burger-icon"><i class="fas fa-bars"></i> MENU</div>
     <ul class="nav-items main-nav mobile-hide">
-      <li class="list-item"><a href="#">Home</a></li>
-      <li class="list-item"><a href="#">Projects</a></li>
-      <li class="list-item"><a href="#">Contact</a></li>
+      <li class="list-item"><a href="#">About</a></li>
+      <li class="list-item"><a href="#projects">Projects</a></li>
+      <li class="list-item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <div class="main-wrapper">
@@ -50,27 +51,34 @@
       <div class="featured">
         <h1>SOFTWARE DEVELOPER</h1>
       </div>
-      <div class="sub-featured">
+      <div class="sub-featured" id="projects">
         <h2>PROJECTS</h2>
         <div class="sub sub1">
-          <div class="sub-img sub1-img"></div>
+          <a class="sub-img sub1-img" href="https://www.wacktory.com"></a>
           <div>
             <h3>Wacktory</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra sollicitudin orci, eu egestas est mollis eu. Aliquam mattis in tellus et rutrum. Cras metus lectus, lacinia non quam at, maximus iaculis justo. Mauris tempor mi at lectus vulputate cursus. Curabitur eu cursus nunc, eu congue orci.</p>
+            <p>Cooperative game that combines both VR and traditional controls to deliver a fun and hectic experience. I've implemented most of the player's movement and interactions on the traditional controller side. Developed in Unity with a group of 12 members. Check out <a href="https://www.wacktory.com">wacktory.com</a> for more information.</p>
           </div>    
         </div>
         <div class="sub sub2">
-          <div class="sub-img sub2-img"></div>
+          <a class="sub-img sub2-img" href="https://www.youtube.com/watch?v=1jSNsDg4DbE"></a>
           <div>
             <h3>Starcraft II Bot</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra sollicitudin orci, eu egestas est mollis eu. Aliquam mattis in tellus et rutrum. Cras metus lectus, lacinia non quam at, maximus iaculis justo. Mauris tempor mi at lectus vulputate cursus. Curabitur eu cursus nunc, eu congue orci.</p>
+            <p>AI for Starcraft II that successfully beats the medium difficulty CPU. In a group of five collaborators, we created a bot that follows a behavior tree to determine its actions at runtime. Developed with Blizzard's Starcraft II API and Professor Dave Churchill's CommandCenter API in C++.</p>
           </div>
         </div>
         <div class="sub sub3">
           <div class="sub-img sub3-img"></div>
           <div>
             <h3>Phonote</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra sollicitudin orci, eu egestas est mollis eu. Aliquam mattis in tellus et rutrum. Cras metus lectus, lacinia non quam at, maximus iaculis justo. Mauris tempor mi at lectus vulputate cursus. Curabitur eu cursus nunc, eu congue orci.</p>
+            <p>Android app that facilitates note-taking and research with the help of Google Cloud Vision to convert images to editable text and citable sources. I developed a system that automatically generates a bibliographic citation with only the book's title. Developed in Java with a five-member team.</p>
+          </div>
+        </div>
+        <div class="sub sub4">
+          <a class="sub-img sub4-img" href="https://theboyz.itch.io/alien-invasion"></a>
+          <div>
+            <h3>Alien Invasion</h3>
+            <p>A satirical take on the president's extreme anti-immigration policy. This is a top-down shooter where the player fends off aliens while trying to reach a helicopter. I implemented most of the weapons systems - including ammo, firing, and inventory. Developed in the Phaser 2 framework for Javascript with a team of five members. Play it in your browser here: <a href="https://theboyz.itch.io/alien-invasion">Alien Invasion.</a></p>
           </div>
         </div>
       </div>
@@ -80,12 +88,15 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="contact">
-      <form class="contact-form">
-        <input name="name" type="text" class="form-input" placeholder="Name" required><br>
-        <input name="email" type="email" class="form-input" placeholder="Email" required><br>
-        <textarea name="message" class="form-input" placeholder="Message" row="4" required></textarea><br>
-        <input type="submit" class="form-input submit" value="SEND MESSAGE">        
+    <div class="contact" id="contact">
+      <h2>GET IN TOUCH</h2>
+      <form class="contact-form" method="post" action="contact.php">
+        <div class="form-wrapper">
+          <input name="name" type="text" class="form-input" placeholder="Name" required>
+          <input name="email" type="email" class="form-input" placeholder="Email" required>
+          <textarea name="message" class="form-input" placeholder="Message" row="4" required></textarea>
+        </div>
+        <input type="submit" class="form-input submit" value="SEND">        
       </form>
     </div>
     <div class="copyright">Salvador Galindo, Copyright &copy; 2019</div>

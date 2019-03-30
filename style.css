@@ -18,9 +18,7 @@ body {
 
 .social-item {
   display:inline-block;
-  margin-left:10px;
-  width:32px;
-  height:32px;
+  margin-right:10px;
 }
 
 .social-item img {
@@ -30,6 +28,8 @@ body {
 .github-link {
   background: url("img/GitHub-Mark-120px-plus.png");
   background-size:cover;
+  width:32px;
+  height:32px;
 }
 
 .github-link:hover {
@@ -41,6 +41,8 @@ body {
 .linkedin-link {
   background: url("img/In-Black-128px-R.png");
   background-size:cover;
+  width:34.72px;
+  height:32px;
 }
 
 .linkedin-link:hover {
@@ -49,14 +51,16 @@ body {
   background-size:cover;
 }
 
-.twitter-link {
-  background: url("img/Twitter_Logo_BlackOnImage.png");
+.itch-link {
+  background: url("img/itchio-logo-textless-black.png");
   background-size:cover;
+  width:35.52px;
+  height:32px;
 }
 
-.twitter-link:hover {
+.itch-link:hover {
   cursor:pointer;
-  background: url("img/Twitter_Logo_WhiteOnImage.png");
+  background: url("img/itchio-logo-textless-white.png");
   background-size:cover;
 }
 
@@ -94,7 +98,7 @@ body {
 }
 
 .list-item {
-  margin-left:10px;
+  margin-right:10px;
   text-transform:uppercase;
   padding:10px;
 }
@@ -102,7 +106,7 @@ body {
 .logo {
   padding:10px;
   font-weight:bold;
-  font-size:32px;
+  font-size:36px;
 }
 
 .burger-icon {
@@ -136,9 +140,10 @@ body {
 .featured {
   grid-area:featuredMain;
   min-height:500px;
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
-    border-box, url(https://source.unsplash.com/1600x900/?technology)
+  background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9))
+    border-box, url(img/computer_background.JPG)
     no-repeat center center;
+  background-size:cover;
   display:grid;
   align-content:flex-end;
   color:#fff;
@@ -172,15 +177,34 @@ body {
 
 .sub-featured h2 {
   margin-left:15px;
+  font-weight:bold;
 }
 
 .sub {
   display:grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin:0 15px 15px 15px;
   color:#444;
   background-color: #fff;
-  background-image: linear-gradient(225deg, #fff 0%, #d7e1ec 74%);
+  background-image: linear-gradient(315deg, #fff 0%, #d7e1ec 74%);
+}
+
+.sub a {
+  text-decoration:none;
+  color:#5a80a8;
+}
+
+.sub a:hover {
+  color:#fff;
+}
+
+.sub h3 {
+  font-size: 24px;
+}
+
+.sub p {
+  font-size:18px;
+  line-height:1.5em;
 }
 
 .sub-img {
@@ -188,21 +212,25 @@ body {
 }
 
 .sub1-img {
-  background: border-box, url(img/wacktory-screenshot.png)
+  background:border-box, url(img/wacktory-screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub2-img {
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
-    border-box, url(https://source.unsplash.com/400x100/?sports)
+  background:border-box, url(img/starcraft-2-bot_screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub3-img {
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
-    border-box, url(https://source.unsplash.com/400x100/?cars)
+  background:border-box, url(img/Phonote_Logo_Wide.png)
+    no-repeat center center;
+  background-size:cover;
+}
+
+.sub4-img {
+  background:border-box, url(img/alien-invasion_screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
@@ -218,7 +246,7 @@ body {
   text-align:center;
   justify-content: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   background-color:#333;
   color:#fff;
 }
@@ -228,10 +256,75 @@ body {
 }
 
 .contact {
+  width:50%;
   display:grid;
   margin:auto;
   padding:20px;
   grid-column:1/-1;
+}
+
+.contact h2 {
+  text-align:left;
+  font-weight:bold;
+}
+
+.contact-form {
+  transition: all 4s ease-in-out;
+}
+
+.form-wrapper {
+  display:grid;
+  grid-gap:10px;
+  grid-template-areas:
+    "nameInput    emailInput"
+    "messageInput messageInput"
+}
+
+.form-input {
+  width:100%;
+  max-width:800px;
+  height:45px;
+  margin-bottom:10px;
+  padding:5px;
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #fff 0%, #d7e1ec 74%);
+  border:none;
+  outline:none;
+  border-radius:3px;
+  color:#444;
+  box-shadow:0 0 4px rgba(0,0,0,0.25);
+}
+
+input[name="name"] {
+  grid-area:nameInput;
+  width:95%;
+}
+
+input[name="email"] {
+  grid-area:emailInput;
+  width:95%;
+}
+
+.contact-form textarea {
+  grid-area:messageInput;
+  height:135px;
+}
+
+.submit {
+  margin-top: 10px;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  border:none;
+  color:#fff;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:0.1em;
+}
+
+.submit:hover {
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #3b4550 0%, #222931 74%);
+  cursor:pointer;
 }
 
 .copyright {
@@ -254,6 +347,9 @@ body {
     grid-column:1/5;
     text-align:center;
   }
+  .list-item {
+    margin-left:30px;
+  }
   .logo {
     grid-column:1/5;
     text-align:center;
@@ -261,9 +357,12 @@ body {
   .nav-wrapper {
     margin-top:0;
   }
+  .contact {
+    width:80%;
+  }
 }
 
-/* --- MOBILE MEDIA QUERY (MODERN SIZE) --- */
+/* --- MOBILE MEDIA QUERY (LARGER SIZE) --- */
 @media screen and (max-width:690px) {
   .logo {
     grid-column:1/3;
@@ -298,7 +397,7 @@ body {
     min-height:300px;
   }
   .featured h1 {
-    font-size:36px;
+    font-size:30px;
     max-width:650px;
   }
   .wrapper {
@@ -317,8 +416,17 @@ body {
   .footer > div{
     grid-column:1/-1;
   }
-  .featured h1 {
-    font-size:30px;
+  .form-wrapper {
+    grid-template-areas:
+      "nameInput"
+      "emailInput"
+      "messageInput"
+  }
+  input[name="name"] {
+    width:100%;
+  }
+  input[name="email"] {
+    width:100%;
   }
   .mobile-show {
     display:block;
@@ -342,5 +450,8 @@ body {
   }
   .burger-icon {
     font-size:16px;
+  }
+  .sub {
+    grid-template-rows: 1fr 2fr;
   }
 }
