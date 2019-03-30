@@ -357,6 +357,14 @@ input[name="email"] {
   .nav-wrapper {
     margin-top:0;
   }
+  .sub h3 {
+    font-size: 20px;
+  }
+  
+  .sub p {
+    font-size:16px;
+    line-height:1.5em;
+  }
   .contact {
     width:80%;
   }
