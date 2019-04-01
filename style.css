@@ -224,13 +224,31 @@ body {
 }
 
 .sub3-img {
-  background:border-box, url(img/Phonote_Logo_Wide.png)
+  background:border-box, url(img/procedural-monument-valley_screenshot.jpg)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub4-img {
+  background:border-box, url(img/Phonote_Logo_Wide.png)
+    no-repeat center center;
+  background-size:cover;
+}
+
+.sub5-img {
   background:border-box, url(img/alien-invasion_screenshot.png)
+    no-repeat center center;
+  background-size:cover;
+}
+
+.sub6-img {
+  background:border-box, url(img/furiously-fast_screenshot.png)
+    no-repeat center center;
+  background-size:cover;
+}
+
+.sub7-img {
+  background:border-box, url(img/ecorunner_screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
