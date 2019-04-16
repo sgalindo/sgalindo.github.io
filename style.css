@@ -26,7 +26,7 @@ body {
 }
 
 .github-link {
-  background: url("img/GitHub-Mark-120px-plus.png");
+  background: url("img/SocialLogos/GitHub-Mark-120px-plus.png");
   background-size:cover;
   width:32px;
   height:32px;
@@ -34,12 +34,12 @@ body {
 
 .github-link:hover {
   cursor:pointer;
-  background: url("img/GitHub-Mark-Light-120px-plus.png");
+  background: url("img/SocialLogos/GitHub-Mark-Light-120px-plus.png");
   background-size:cover;
 }
 
 .linkedin-link {
-  background: url("img/In-Black-128px-R.png");
+  background: url("img/SocialLogos/In-Black-128px-R.png");
   background-size:cover;
   width:34.72px;
   height:32px;
@@ -47,12 +47,12 @@ body {
 
 .linkedin-link:hover {
   cursor:pointer;
-  background: url("img/In-White-128px-R.png");
+  background: url("img/SocialLogos/In-White-128px-R.png");
   background-size:cover;
 }
 
 .itch-link {
-  background: url("img/itchio-logo-textless-black.png");
+  background: url("img/SocialLogos/itchio-logo-textless-black.png");
   background-size:cover;
   width:35.52px;
   height:32px;
@@ -60,7 +60,7 @@ body {
 
 .itch-link:hover {
   cursor:pointer;
-  background: url("img/itchio-logo-textless-white.png");
+  background: url("img/SocialLogos/itchio-logo-textless-white.png");
   background-size:cover;
 }
 
@@ -125,9 +125,10 @@ body {
   grid-template-columns: repeat(3,1fr);
   grid-gap:10px;
   grid-template-areas: 
-    "featuredMain featuredMain featuredMain"
-    "contentMain  contentMain  contentMain"
-    "featuredSub  featuredSub  featuredSub"
+    "featuredMain   featuredMain   featuredMain"
+    "contentMain    contentMain    contentMain"
+    "featuredSkills featuredSkills featuredSkills"
+    "featuredSub    featuredSub    featuredSub"
 }
 
 .wrapper > .featured,
@@ -163,6 +164,15 @@ body {
   background-color:rgba(255,255,255,0.35);
   color:#444;
   line-height: 1.5em;
+}
+
+.skills-featured {
+  grid-area:featuredSkills;
+}
+
+.skills-featured ul {
+  text-align:center;
+  list-style-type:none;
 }
 
 .sub-featured {
@@ -212,43 +222,43 @@ body {
 }
 
 .sub1-img {
-  background:border-box, url(img/wacktory-screenshot.png)
+  background:border-box, url(img/ProjectScreenshots/wacktory-screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub2-img {
-  background:border-box, url(img/starcraft-2-bot_screenshot.png)
+  background:border-box, url(img/ProjectScreenshots/starcraft-2-bot_screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub3-img {
-  background:border-box, url(img/procedural-monument-valley_screenshot.jpg)
+  background:border-box, url(img/ProjectScreenshots/procedural-monument-valley_screenshot.jpg)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub4-img {
-  background:border-box, url(img/Phonote_Logo_Wide.png)
+  background:border-box, url(img/ProjectScreenshots/Phonote_Logo_Wide.png)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub5-img {
-  background:border-box, url(img/alien-invasion_screenshot.png)
+  background:border-box, url(img/ProjectScreenshots/alien-invasion_screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub6-img {
-  background:border-box, url(img/furiously-fast_screenshot.png)
+  background:border-box, url(img/ProjectScreenshots/furiously-fast_screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
 
 .sub7-img {
-  background:border-box, url(img/ecorunner_screenshot.png)
+  background:border-box, url(img/ProjectScreenshots/ecorunner_screenshot.png)
     no-repeat center center;
   background-size:cover;
 }
@@ -281,8 +291,8 @@ body {
   grid-column:1/-1;
 }
 
-.contact h2 {
-  text-align:left;
+.contact h2, h1 {
+  text-align:center;
   font-weight:bold;
 }
 
