@@ -4,6 +4,7 @@ body {
   background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
+/* --- Social Icons --- */
 .social {
   max-width:1200px;
   margin:0 auto;
@@ -21,49 +22,18 @@ body {
   margin-right:10px;
 }
 
-.social-item img {
-  visibility:hidden;
+.social-item a{
+  color:#000;
+  text-decoration:none;
+  font-size:36px;
 }
 
-.github-link {
-  background: url("img/SocialLogos/GitHub-Mark-120px-plus.png");
-  background-size:cover;
-  width:32px;
-  height:32px;
-}
-
-.github-link:hover {
+.social-item a:hover {
   cursor:pointer;
-  background: url("img/SocialLogos/GitHub-Mark-Light-120px-plus.png");
-  background-size:cover;
+  color:#fff;
 }
 
-.linkedin-link {
-  background: url("img/SocialLogos/In-Black-128px-R.png");
-  background-size:cover;
-  width:34.72px;
-  height:32px;
-}
-
-.linkedin-link:hover {
-  cursor:pointer;
-  background: url("img/SocialLogos/In-White-128px-R.png");
-  background-size:cover;
-}
-
-.itch-link {
-  background: url("img/SocialLogos/itchio-logo-textless-black.png");
-  background-size:cover;
-  width:35.52px;
-  height:32px;
-}
-
-.itch-link:hover {
-  cursor:pointer;
-  background: url("img/SocialLogos/itchio-logo-textless-white.png");
-  background-size:cover;
-}
-
+/* --- Nav --- */
 .nav-wrapper {
   max-width:1200px;
   margin:0 auto;
@@ -131,6 +101,7 @@ body {
     "featuredSub    featuredSub    featuredSub"
 }
 
+/* Common padding for all boxes */
 .wrapper > .featured,
 .wrapper > .sub-featured > div,
 .wrapper > .main-content,
@@ -138,6 +109,12 @@ body {
   padding: 20px;
 }
 
+/* Drop shadows for all boxes */
+.main-content, .featured, .sub-featured > div, .main-sidebar, .sub-featured, .sub1-img, .sub2-img, .sub3-img {
+  box-shadow:0 0 4px rgba(0,0,0,0.25);
+}
+
+/* --- Big picture --- */
 .featured {
   grid-area:featuredMain;
   min-height:500px;
@@ -150,15 +127,12 @@ body {
   color:#fff;
 }
 
-.main-content, .featured, .sub-featured > div, .main-sidebar, .sub-featured, .sub1-img, .sub2-img, .sub3-img {
-  box-shadow:0 0 4px rgba(0,0,0,0.25);
-}
-
 .featured h1 {
   font-size:48px;
   max-width:650px;
 }
 
+/* --- Bio --- */
 .main-content {
   grid-area:contentMain;
   background-color:rgba(255,255,255,0.35);
@@ -166,6 +140,7 @@ body {
   line-height: 1.5em;
 }
 
+/* --- Skills --- */
 .skills-featured {
   grid-area:featuredSkills;
 }
@@ -175,6 +150,7 @@ body {
   list-style-type:none;
 }
 
+/* --- Projects --- */
 .sub-featured {
   grid-area:featuredSub;
   display:grid;
@@ -263,6 +239,7 @@ body {
   background-size:cover;
 }
 
+/* --- Footer --- */
 .footer {
   display:grid;
   margin:auto;
@@ -287,8 +264,10 @@ body {
   width:50%;
   display:grid;
   margin:auto;
-  padding:20px;
+  text-align:center;
   grid-column:1/-1;
+  grid-template-rows:1fr 1fr;
+  grid-template-areas: "contactMe" "email";
 }
 
 .contact h2, h1 {
@@ -296,63 +275,12 @@ body {
   font-weight:bold;
 }
 
-.contact-form {
-  transition: all 4s ease-in-out;
+.contact h2 {
+  grid-area:contactMe;
 }
 
-.form-wrapper {
-  display:grid;
-  grid-gap:10px;
-  grid-template-areas:
-    "nameInput    emailInput"
-    "messageInput messageInput"
-}
-
-.form-input {
-  width:100%;
-  max-width:800px;
-  height:45px;
-  margin-bottom:10px;
-  padding:5px;
-  background-color: #fff;
-  background-image: linear-gradient(45deg, #fff 0%, #d7e1ec 74%);
-  border:none;
-  outline:none;
-  border-radius:3px;
-  color:#444;
-  box-shadow:0 0 4px rgba(0,0,0,0.25);
-}
-
-input[name="name"] {
-  grid-area:nameInput;
-  width:95%;
-}
-
-input[name="email"] {
-  grid-area:emailInput;
-  width:95%;
-}
-
-.contact-form textarea {
-  grid-area:messageInput;
-  height:135px;
-}
-
-.submit {
-  margin-top: 10px;
-  background-color: #485461;
-  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-  border:none;
-  color:#fff;
-  font-size:20px;
-  font-weight:bold;
-  letter-spacing:0.1em;
-}
-
-.submit:hover {
-  background-color: #485461;
-  background-image: linear-gradient(315deg, #3b4550 0%, #222931 74%);
-  cursor:pointer;
+.contact h1 {
+  grid-area:email;
 }
 
 .copyright {
@@ -388,7 +316,6 @@ input[name="email"] {
   .sub h3 {
     font-size: 20px;
   }
-  
   .sub p {
     font-size:16px;
     line-height:1.5em;
@@ -451,18 +378,6 @@ input[name="email"] {
   }
   .footer > div{
     grid-column:1/-1;
-  }
-  .form-wrapper {
-    grid-template-areas:
-      "nameInput"
-      "emailInput"
-      "messageInput"
-  }
-  input[name="name"] {
-    width:100%;
-  }
-  input[name="email"] {
-    width:100%;
   }
   .mobile-show {
     display:block;
