@@ -111,7 +111,7 @@ body {
 
 /* Drop shadows for all boxes */
 .main-content, .featured, .sub-featured > div, .main-sidebar, .sub-featured, .sub1-img, .sub2-img, .sub3-img {
-  box-shadow:0 0 4px rgba(0,0,0,0.25);
+  box-shadow:0 0 6px rgba(0,0,0,0.5);
 }
 
 /* --- Big picture --- */
@@ -128,6 +128,8 @@ body {
 }
 
 .featured h1 {
+  display:none;
+  padding:40px 0 0 0;
   font-size:48px;
   max-width:650px;
 }
@@ -135,9 +137,13 @@ body {
 /* --- Bio --- */
 .main-content {
   grid-area:contentMain;
-  background-color:rgba(255,255,255,0.35);
+  padding:20px;
+  margin:0;
   color:#444;
+  background-color: #fff;
+  background-image: linear-gradient(160deg, #fff 0%, #d7e1ec 74%);
   line-height: 1.5em;
+  font-size:18px;
 }
 
 /* --- Skills --- */
@@ -146,7 +152,16 @@ body {
 }
 
 .skills-featured ul {
+  padding:10px 0;
   text-align:center;
+  list-style-type:none;
+}
+
+.skill-logo {
+  padding:10px;
+  margin-right:10px;
+  font-size:56px;
+  display:inline;
   list-style-type:none;
 }
 
@@ -245,7 +260,7 @@ body {
   margin:auto;
   margin-top:10px;
   background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1))
-    border-box, url(https://source.unsplash.com/1600x400/?forest)
+    border-box, url(https://source.unsplash.com/1600x400/?night)
     no-repeat center center;
   background-size:cover;
   text-align:center;
@@ -290,6 +305,11 @@ body {
   grid-column:1/-1;
 }
 
+.copyright a {
+  text-decoration:none;
+  color:#fff;
+}
+
 /* --- TABLET MEDIA QUERY --- */
 
 @media screen and (max-width:950px) {
@@ -297,6 +317,7 @@ body {
     grid-template-areas: 
       "featuredMain featuredMain featuredMain"
       "contentMain  contentMain  contentMain"
+      "featuredSkills featuredSkills featuredSkills"
       "featuredSub  featuredSub  featuredSub"
   }
   .nav-items {
@@ -367,6 +388,7 @@ body {
     grid-template-areas:
       "featuredMain featuredMain featuredMain"
       "contentMain  contentMain  contentMain"
+      "featuredSkills featuredSkills featuredSkills"
       "featuredSub  featuredSub  featuredSub"
   }
   .sub {

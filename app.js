@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     /* ---- MOBILE NAVIGATION ---- */
     $(".burger-icon").on("click", function() {
         if ($(".main-nav").hasClass("mobile-hide")) {
@@ -11,5 +10,9 @@ $(document).ready(function() {
         }
 
     });
-    
+});
+
+$(window).on("load", function() {
+    /* ---- FADE IN ---- */
+    $(".featured h1").css('color', '#fff').fadeIn(1500);
 });
