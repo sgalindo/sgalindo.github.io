@@ -12,7 +12,12 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    /* ---- FADE IN ---- */
+    $('body').css('display', 'none').fadeIn(1000);
+});
+
 $(window).on("load", function() {
     /* ---- FADE IN ---- */
-    $(".featured h1").css('color', '#fff').fadeIn(1500);
+    $(".featured h1").css('color', '#fff').fadeIn(2500);
 });
