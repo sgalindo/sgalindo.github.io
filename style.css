@@ -110,39 +110,63 @@ body {
 }
 
 /* Drop shadows for all boxes */
-.main-content, .featured, .sub-featured > div, .main-sidebar, .sub-featured, .sub1-img, .sub2-img, .sub3-img {
+.featured, .sub-featured > div, .main-sidebar, .sub-featured, .sub1-img, .sub2-img, .sub3-img {
   box-shadow:0 0 6px rgba(0,0,0,0.5);
 }
 
 /* --- Big picture --- */
 .featured {
   grid-area:featuredMain;
+  display:grid;
   min-height:500px;
-  background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9))
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1))
     border-box, url(img/computer_background.JPG)
     no-repeat center center;
   background-size:cover;
-  display:grid;
-  align-content:flex-end;
   color:#fff;
+  grid-template-areas:"featuredTitle""contentMain";
 }
 
 .featured h1 {
-  padding:40px 0 0 0;
+  grid-area:featuredTitle;
   font-size:48px;
-  max-width:650px;
+  text-align:center;
+  align-content:center;
 }
 
 /* --- Bio --- */
 .main-content {
   grid-area:contentMain;
+  display:grid;
   padding:20px;
   margin:0;
-  color:#444;
-  background-color: #fff;
-  background-image: linear-gradient(160deg, #fff 0%, #d7e1ec 74%);
+  grid-template-columns:1fr 1fr;
+  align-content:center;
+}
+
+.profile-picture {
+  padding:20px;
+  margin:0;
+  text-align:center;
+}
+
+.profile-picture img {
+  box-shadow:0 0 10px rgba(0,0,0,0.9);
+  border-radius:50%;
+}
+
+.bio {
+  padding:10px;
+  margin:0;
+  vertical-align:middle;
+}
+
+.bio p {
+  color:#fff;
+  max-width:800px;
   line-height: 1.5em;
-  font-size:18px;
+  font-size:20px;
+  vertical-align:middle;
 }
 
 /* --- Skills --- */
@@ -333,6 +357,15 @@ body {
   .nav-wrapper {
     margin-top:0;
   }
+  .featured {
+    grid-template-areas:"featuredTitle" 
+                        "contentMain"
+                        "contentMain";
+  }
+  .main-content {
+    grid-template-rows:1fr;
+    grid-template-columns:none;
+  }
   .sub h3 {
     font-size: 20px;
   }
@@ -347,6 +380,10 @@ body {
 
 /* --- MOBILE MEDIA QUERY (LARGER SIZE) --- */
 @media screen and (max-width:690px) {
+  .social-links {
+    text-align:center;
+    padding:0;
+  }
   .logo {
     grid-column:1/3;
     font-size:24px;
@@ -383,6 +420,9 @@ body {
     font-size:30px;
     max-width:650px;
   }
+  .bio p {
+    font-size:18px;
+  }
   .wrapper {
     grid-template-areas:
       "featuredMain featuredMain featuredMain"
@@ -410,10 +450,6 @@ body {
 
 /* --- MOBILE MEDIA QUERY (SMALLER SIZE) --- */
 @media screen and (max-width:340px) {
-  .social-links {
-    text-align:center;
-    padding:0;
-  }
   .nav-wrapper {
     padding:15px 20px 15px 5px;
   }

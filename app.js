@@ -8,16 +8,18 @@ $(document).ready(function() {
             $(".main-nav").addClass("mobile-hide");
             $(".main-nav").removeClass("mobile-show");
         }
-
     });
+    $(".featured h1").hide();
+    $(".main-content").hide();
 });
 
-$(document).ready(function() {
-    /* ---- FADE IN ---- */
-    $('body').css('display', 'none').fadeIn(1000);
-});
+// $(document).ready(function() {
+//     /* ---- FADE IN ---- */
+//     $('body').css('display', 'none').fadeIn(1000);
+// });
 
 $(window).on("load", function() {
     /* ---- FADE IN ---- */
-    $(".featured h1").css('color', '#fff').fadeIn(2500);
+    $(".featured h1").css('color', '#fff').fadeIn(2250);
+    $(".main-content").css('color', '#fff').fadeIn(1000);
 });
