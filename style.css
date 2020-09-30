@@ -169,6 +169,15 @@ body {
   vertical-align:middle;
 }
 
+.bio a {
+  text-decoration:none;
+  color:#5a80a8;
+}
+
+.bio a:hover {
+  color:#fff;
+}
+
 /* --- Skills --- */
 .skills-featured {
   grid-area:featuredSkills;
