@@ -71,12 +71,13 @@ body {
   margin-right:10px;
   text-transform:uppercase;
   padding:10px;
+  font-size: 18px;
 }
 
 .logo {
   padding:10px;
   font-weight:bold;
-  font-size:36px;
+  font-size:48px;
 }
 
 .burger-icon {
@@ -269,7 +270,7 @@ body {
 }
 
 .sub5-img {
-  background:border-box, url(img/ProjectScreenshots/please-buy-something_screenshot2.png)
+  background:border-box, url(img/ProjectScreenshots/saleblazers-header.jpg)
     no-repeat center center;
   background-size:cover;
 }
@@ -344,7 +345,7 @@ body {
 
 /* --- TABLET MEDIA QUERY --- */
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1200px) {
   .wrapper {
     grid-template-areas: 
       "featuredMain featuredMain featuredMain"
