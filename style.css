@@ -98,8 +98,8 @@ body {
   grid-template-areas: 
     "featuredMain   featuredMain   featuredMain"
     "contentMain    contentMain    contentMain"
-    "featuredSkills featuredSkills featuredSkills"
     "featuredSub    featuredSub    featuredSub"
+    "featuredSkills featuredSkills featuredSkills"
 }
 
 /* Common padding for all boxes */
