@@ -52,6 +52,16 @@ body {
   filter: drop-shadow(2px 2px 1px #787f86b9);
 }
 
+.dark-hide {
+  display: inline-block;
+  visibility: visible;
+}
+
+.light-hide {
+  display: none;
+  visibility: hidden;
+}
+
 #title-wrapper {
   margin: auto;
   margin-top:30px;
@@ -226,6 +236,16 @@ body {
   
   .proj-desc a:hover {
     color: #629068;
+  }
+
+  .light-hide {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  .dark-hide {
+    display: none;
+    visibility: hidden;
   }
 }
 
