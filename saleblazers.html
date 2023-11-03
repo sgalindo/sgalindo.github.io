@@ -4,8 +4,120 @@
     <title>Saleblazers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/SG_Logo_Gray.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div>PLUH!</div>
+    <div class="project-page-outer">
+      <div class="project-page-middle">
+        <div class="project-page-inner">
+          <div class="project-page-header">
+            <a href="https://store.steampowered.com/app/1419850/Saleblazers/">
+              <img src="img/Saleblazers/saleblazers_logo.png">
+            </a>
+          </div>
+          <div class="project-page">
+            <div class="trailer-container">
+              <iframe width="960" height="540" src="https://www.youtube.com/embed/-TsrU7bX5ws?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="project-page-lower">
+              <div class="project-description">
+                A multiplayer open-world shopkeeping game by <a href="https://airstrafeinteractive.com/">Airstrafe Interactive.</a>
+              </div>
+              <div class="project-page-work-desc">
+                <h2>Responsibilities</h2>
+                As Lead Engineer for a team of talented programmers, I was responsible for: 
+                <ul class="project-resp-list">
+                  <li class="project-resp-item">
+                    <p>The development of a wide variety of systems including open world streaming, multiplayer, and AI in Unity.</p>
+                  </li>
+                  <li class="project-resp-item">
+                    <p>Holding weekly engineering meetings to minimize potential miscommunication and ensuring that everyone was always up-to-speed. </p>
+                  </li>
+                  <li class="project-resp-item">
+                    <p>Reviewing submitted code and providing feedback.</p>
+                  </li>
+                  <li class="project-resp-item">
+                    <p>Assigning tasks to engineers based on their strengths.</p>
+                  </li>
+                  <li class="project-resp-item">
+                    <p>Making sure I always had time to assist them when needed.</p>
+                  </li>
+                  <li class="project-resp-item">
+                    <p>Working closely with artists and designers to ensure that all the features and tools they needed were developed.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-features">
+                <h2>Features</h2>
+                <table>
+                  <tr>
+                    <td class="feature-card-img">
+                      <!--<img src="img/screenshot-placeholder.png">-->
+                    </td>
+                    <td class="feature-card-text">
+                      <h3>Open World Level Streaming</h3>
+                      Modified Procedural Worlds' <a href="https://www.procedural-worlds.com/products/professional/sectr/">SECTR</a> level streaming system to support loading world chunks concurrently in multiplayer. 
+                      Added support for saving and loading game items in each chunk at runtime. 
+                      Created a Unity editor tool for artists and designers to easily modify and export chunk scenes within the editor.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-card-img">
+                      <!--<img src="img/screenshot-placeholder.png">-->
+                    </td>
+                    <td class="feature-card-text">
+                      <h3>Online Networking</h3>
+                      Converted the once-singleplayer project to support online multiplayer using <a href="https://mirror-networking.com/">Mirror.</a> Optimized to support syncing hundreds of game objects across its vast open world.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-card-img">
+                      <!--<img src="img/screenshot-placeholder.png">-->
+                    </td>
+                    <td class="feature-card-text">
+                      <h3>Everything Interactable</h3>
+                      Implemented a component-based script design that made picking up and using any prop possible. From a wooden chair to a machine gun, each item had its own unique attributes, uses, and effects on the world. 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-card-img">
+                      <!--<img src="img/screenshot-placeholder.png">-->
+                    </td>
+                    <td class="feature-card-text">
+                      <h3>Fully Networked Dialogue System</h3>
+                      Local and global dialogue system that is shared across players. Players can join in on an ongoing conversation and participate.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-card-img">
+                      <!--<img src="img/screenshot-placeholder.png">-->
+                    </td>
+                    <td class="feature-card-text">
+                      <h3>Modular Behavior Trees</h3>
+                      All NPCs have behaviors that allow them to dynamically react to the players' actions. Created support for many different types of NPCs with different behaviors - including pedestrians, bandit enemies, animals, and law officers.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-card-img">
+                      <!--<img src="img/screenshot-placeholder.png">-->
+                    </td>
+                    <td class="feature-card-text">
+                      <h3>Shopkeeping Simulation</h3>
+                      Heavy focus on creating a fully customizable shopkeeping experience. Players could build their store, rename it, decorate it, and sell anything they want in it. Support for a large variety of customer types, each with their own unique quirks and preferences.
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="steam-widget-container">
+                <iframe src="https://store.steampowered.com/widget/1419850/" frameborder="0" width="646" height="190"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
