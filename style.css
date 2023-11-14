@@ -207,6 +207,7 @@ body {
   display: table;
   height: 100%;
   width: 100%;
+  background-color:#f0f0f0;
 }
 
 .project-page-middle {
