@@ -348,7 +348,7 @@ iframe {
 }
 
 /* --- DARK MODE --- */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   #outer-wrapper {
     background-color: #191e25;
   }
@@ -423,7 +423,6 @@ iframe {
     visibility: hidden;
   }
 
-  /* --- Project Page --- */
   .project-page-outer {
     background-color:#191e25;
   }
@@ -458,7 +457,7 @@ iframe {
     text-align: left;
     color: #fff;
   }
-}
+}*/
 
 /* --- MOBILE MEDIA QUERY --- */
 @media screen and (max-width: 480px) {
